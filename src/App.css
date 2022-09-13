@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+.card-container {
+    background-color: #002B5B;
+    height: 950px;
+    width: 400px;
+    border-radius: 10px;
+    margin: 10px auto;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Nunito', sans-serif;
+    overflow: hidden;
+}
+.img {
+    height: 300px;
+    width: auto;
+    overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img > img {
+    height: 750px;
+    margin-top: -260px;
+    margin-left: -75px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+    text-align: center;
+    color: #256D85;
+    height: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.name {
+    text-align: center;
+    color: #8fe3cf;
+    font-weight: 800;
+    margin-bottom: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.role {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.website {
+    margin-top: 0px;
+}
+
+.button-container {
+    margin-left: 60px;
+    height: 50px;
+    font-weight: 800;
+}
+
+button {
+    height: 40px;
+    float: left;
+    padding: 10px 20px;
+    margin: 0px 18px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #256D85;
+}
+
+button:hover {
+    background-color: #8fe3cf;
+}
+
+.email-icon,
+.linkedin-icon {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 0px;
+}
+
+.email-text,
+.linkedin-text {
+    display: inline-block;
+}
+
+main {
+    color: #8fe3cf;
+}
+.about-topic,
+.interest-topic {
+    padding-top: 0px;
+    margin-bottom: 8px;
+    margin-left: 20px;
+}
+.about-info,
+.interest-info {
+    margin-top: 0px;
+    padding: 0px 20px;
+}
+
+.footer-container {
+    margin-top: 40px;
+    height: 60px;
+    background-color: #2B4865;
+    
+}
+
+.footer-container > div {
+    display: block;
+    text-align: center;
+    padding: 7px;
+}
+
+.icon {
+    margin: 0px 13px;
+    cursor: pointer;
 }

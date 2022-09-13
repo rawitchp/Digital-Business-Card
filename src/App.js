@@ -1,25 +1,53 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Profile from './img/Profile.jpg'
+import {FaTwitterSquare,FaFacebookSquare,FaInstagramSquare,FaGithubSquare} from 'react-icons/fa'
+import {MdEmail} from 'react-icons/md'
+import {BsLinkedin} from 'react-icons/bs'
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='card-container'>
+      <div className='img'>
+        <img src={Profile} alt='' />
+      </div>
+      <header className='header'>
+        <h2 className='name'>Rawitch Payakkawan</h2>
+        <h4 className='role'>Frontend Developer</h4>
+        <h4 className='website'>rawitchp.website</h4>
       </header>
+      <div className='button-container'>
+          <button><MdEmail size={18} className='email-icon'/>Email</button>
+          <button><BsLinkedin size={18} className='linkedin-icon'/><div className='linkedin-text'>LinkedIn</div></button>
+      </div>
+      <main>
+        <div className='about'>
+          <h2 className='about-topic'>About</h2>
+          <div className='about-info'>Minim nulla mollit dolor ut labore sit fugiat excepteur laboris tempor est proident. Esse et in laboris consequat aute id ea et laborum pariatur aute excepteur. Id est dolor quis aliquip nulla. Quis velit esse laboris deserunt ut consectetur aliqua amet.</div>
+        </div>
+        <div className='interest'>
+          <h2 className='interest-topic'>Interests</h2>
+          <div className='interest-info'>Amet ut duis labore pariatur tempor do proident minim sunt enim esse. Aliquip sint nisi non minim excepteur cillum sit veniam occaecat sint. Consectetur amet veniam cupidatat excepteur non nulla. Duis nulla ad dolore occaecat elit. Nulla eiusmod dolor nulla eu minim anim elit.</div>
+        </div>
+      </main>
+      <footer>
+        <div className='footer-container'>
+          <div>
+            <FaTwitterSquare size={45} className='icon'/>
+            <FaFacebookSquare size={45} className='icon'/>
+            <FaInstagramSquare size={45}className='icon'/>
+            <FaGithubSquare size={45} className='icon'/>
+          </div>
+          
+        </div>
+      </footer>
+      
     </div>
+      
   );
+
 }
 
 export default App;
