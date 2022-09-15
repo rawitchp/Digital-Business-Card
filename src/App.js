@@ -19,8 +19,8 @@ function App() {
         <h4 className='website'>rawitchp.website</h4>
       </header>
       <div className='button-container'>
-          <button><MdEmail size={18} className='email-icon'/>Email</button>
-          <button><BsLinkedin size={18} className='linkedin-icon'/><div className='linkedin-text'>LinkedIn</div></button>
+          <a href='https://mail.google.com/' target='_blank' rel='noreferrer'><button ><MdEmail size={18} className='email-icon'/>Email</button></a>
+          <a href='https://www.linkedin.com/in/rawitch-payakkawan/' target='_blank' rel='noreferrer'><button><BsLinkedin size={18} className='linkedin-icon'/><div className='linkedin-text'>LinkedIn</div></button></a>
       </div>
       <main>
         <div className='about'>
@@ -35,10 +35,10 @@ function App() {
       <footer>
         <div className='footer-container'>
           <div>
-            <FaTwitterSquare size={45} className='icon'/>
-            <FaFacebookSquare size={45} className='icon'/>
-            <FaInstagramSquare size={45}className='icon'/>
-            <FaGithubSquare size={45} className='icon'/>
+            <a href='https://www.google.co.th/' target='_blank' rel='noreferrer'><FaTwitterSquare size={45} className='icon'/></a>
+            <a href='https://www.facebook.com/rawitch.payakkawan/' target='_blank' rel='noreferrer'><FaFacebookSquare size={45} className='icon'/></a>
+            <a href='https://www.instagram.com/_mix.rw_/' target='_blank' rel='noreferrer'><FaInstagramSquare size={45}className='icon'/></a>
+            <a href='https://github.com/rawitchp' target='_blank' rel='noreferrer'><FaGithubSquare size={45} className='icon'/></a>
           </div>
           
         </div>
